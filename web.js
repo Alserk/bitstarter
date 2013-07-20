@@ -7,8 +7,8 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
 //  	var buffer = fs.readFileSync("index.html");
 //	console.log(buffer);
-	concole.log(fs.readFileSync("index.html","utf-8").toString('utf-8'))
-	response.send(fs.readFileSync("index.html","utf-8").toString('utf-8'));
+	concole.log(fs.readFileSync("index.html").toString());
+	response.send(fs.readFileSync("index.html").toString());
 });
 
 var port = process.env.PORT || 5000;
