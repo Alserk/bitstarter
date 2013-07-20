@@ -7,7 +7,7 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
 //  	var buffer = fs.readFileSync("index.html");
 //	console.log(buffer);
-	concole.log(fs.readFileSync("index.html").toString());
+//	concole.log(fs.readFileSync("index.html").toString());
 	response.send(fs.readFileSync("index.html").toString());
 });
 
